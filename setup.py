@@ -12,4 +12,5 @@ setup(name='Milky_Way_mass_profile',
       url='https://github.com/MariusCautun/Milky_Way_mass_profile',
       license='GNU GENERAL PUBLIC LICENSE',
       py_modules=['Cautun20_galpy_potential', 'Cautun20_contraction'],
+      package_data={'Milky_Way_mass_profile': ['MW_enclosed_mass_profile.txt', 'MW_rotation_Eilers_2019.txt']},
       zip_safe=False)
