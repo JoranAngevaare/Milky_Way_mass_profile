@@ -1,4 +1,4 @@
-_edit_ the only difference with this fork w.r.t. https://github.com/MariusCautun/Milky_Way_mass_profile is the addition of `setup.py`
+_edit_ the only difference with this fork w.r.t. https://github.com/MariusCautun/Milky_Way_mass_profile is the addition of `setup.py` and restructureing as a package
 
 # The Milky Way potential according to Cautun et al (2020)
 **Last reviewed:** v1.0

@@ -1,16 +1,14 @@
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup
 
 readme = open('README.md').read()
 
-setup(name='Milky_Way_mass_profile',
+setup(name='mw_mass_profile',
       version='0.0.0',
       long_description=readme,
       author='Marius Cautun',
       url='https://github.com/MariusCautun/Milky_Way_mass_profile',
       license='GNU GENERAL PUBLIC LICENSE',
-      py_modules=['Cautun20_galpy_potential', 'Cautun20_contraction'],
-      package_data={'Milky_Way_mass_profile': ['MW_enclosed_mass_profile.txt', 'MW_rotation_Eilers_2019.txt']},
+      packages=setuptools.find_packages() + ['data'],
+      package_dir={'data': 'data'},
+      package_data={'data':  ['MW_enclosed_mass_profile.txt', 'MW_rotation_Eilers_2019.txt']},
       zip_safe=False)

@@ -110,7 +110,7 @@ def Baryon_Dens(R,z): #Total baryon profile in array friendly format
     return TotalDens
 
 
-from Cautun20_contraction import potential_contract_DM_halo
+from .Cautun20_contraction import potential_contract_DM_halo
 rho_DM_contracted, MassCum_DM_contracted, MassCum_bar, MassCum_DM_uncontracted, rspace = \
         potential_contract_DM_halo( DM_Dens_uncontracted, Baryon_Dens, f_bar=fb )
 
